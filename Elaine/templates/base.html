@@ -9,25 +9,23 @@
 </head>
 
 <body>
-    <a href="{% url 'index' %}"><img  class="e" src="{% static 'images/E.png' %}"></a>
+
     <header>
-        <h1><a href="{% url 'index' %}">Home</a></h1>
-        <nav>
-            <ul class="nav_links">
+        <a href="{% url 'index' %}" class="brand">Elaine</a>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="{% url 'about' %}">About</a>
+                <a href="{% url 'resume' %}">Resume</a>
+                <a href="{% url 'projects' %}">Projects</a>
+                <a href="{% url 'blog' %}">Blog</a>
+                <a href="{% url 'tutorials' %}">Tutorials</a>
 
-                <li><a href="{% url 'about' %}">About</a></li>
-                <li><a href="{% url 'resume' %}">Resume</a></li>
-                <li><a href="{% url 'blog' %}">Blog</a></li>
-                <li><a href="{% url 'tutorials' %}">Tutorials</a></li>
 
-            </ul>
-        </nav>
-        <a class="cta" href="{% url 'contact' %}"><button>Contact</button></a>
+            </div>
+
+        </div>
+        <a  href="{% url 'contact' %}"><button>Contact</button></a>
     </header>
-
-    <div class="bg-gradiant">
-
-    </div>
     
     <main>
         {% block content %}

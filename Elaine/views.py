@@ -17,3 +17,6 @@ def tutorials(request):
 
 def blog(request):
     return render(request, 'blog.html')
+
+def projects(request):
+    return render(request, 'projects.html')
