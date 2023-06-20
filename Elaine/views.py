@@ -9,5 +9,11 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def resume(request):
+    return render(request, 'resume.html')
+
 def tutorials(request):
     return render(request, 'tutorials.html')
+
+def blog(request):
+    return render(request, 'blog.html')

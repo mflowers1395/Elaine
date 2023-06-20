@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %} Home {% endblock %}
 
 {% block content %}
-<h1>Home</h1>
+
+<h1 class="saying"> "Graduates Today, History Makers Tommorrow." <br> (Flowers, 2023).</h1>
+<img  class="marilyn" src="{% static 'images/Marilyn.png' %}">
+
 {% endblock %}

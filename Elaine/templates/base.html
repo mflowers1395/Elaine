@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
@@ -8,12 +9,31 @@
 </head>
 
 <body>
-    {% include 'navbar.html' %}
+    <a href="{% url 'index' %}"><img  class="e" src="{% static 'images/E.png' %}"></a>
+    <header>
+        <h1><a href="{% url 'index' %}">Home</a></h1>
+        <nav>
+            <ul class="nav_links">
+
+                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a href="{% url 'resume' %}">Resume</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'tutorials' %}">Tutorials</a></li>
+
+            </ul>
+        </nav>
+        <a class="cta" href="{% url 'contact' %}"><button>Contact</button></a>
+    </header>
+
+    <div class="bg-gradiant">
+
+    </div>
+    
     <main>
         {% block content %}
         {% endblock %}
     </main>
-    <footer>Copyright 2023 &copy; Marilyn Elaine Flowers</footer>
+    <footer class="footer">Copyright 2023 &copy; Marilyn Elaine Flowers</footer>
 
 </body>
 

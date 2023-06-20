@@ -1,7 +1,120 @@
-body{
-    background-color: #F8F6F0;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: black;
 }
 
-.topnav-right {
-    float: right;
-  }
+.marilyn {
+    display:block;
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 50px;
+    width: 30%;
+    height: 30%;
+    box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+.saying{
+    float:left;
+    margin-top: 50px;
+
+
+}
+
+
+
+
+.news{
+    margin-top: 40px;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     box-shadow: 10px 10px 5px #ccc;
+      -moz-box-shadow: 10px 10px 5px #ccc;
+      -webkit-box-shadow: 10px 10px 5px #ccc;
+      -khtml-box-shadow: 10px 10px 5px #ccc;
+}
+
+.life {
+    height: 650px;
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+}
+
+.e{
+    height:90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+li,
+a,
+button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: Black;
+    text-decoration: none;
+
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    background-image: linear-gradient(45deg,#ffcccc, white);
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: Black;
+    font-size: 20px;
+    background-image: linear-gradient(45deg,#ffcccc, white);
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgba(207, 47, 116);
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(227, 61, 148);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+
+button:hover {
+    background-color: rgba(207, 47, 116);
+
+}
