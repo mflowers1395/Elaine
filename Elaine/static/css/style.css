@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
+/* Overall Website Design */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+/* Overall Website Design */
 
+/* HEADER AND NAVIGATION BAR */
 header{
     z-index: 999;
     position: absolute;
@@ -61,8 +64,19 @@ header .navigation .navigation-items a:hover:before{
     width: 100%;
 }
 
+/* HEADER AND NAVIGATION BAR */
+
+/* Homepage Design */
 section{
     padding:100px 200px;
+    
+}
+
+.home .content .marilyn{
+    display: block;
+    margin-left: 800px;
+    width: 50%;
+    justify-content: space-between;
 }
 
 .home{
@@ -79,7 +93,7 @@ section{
 .home .content{
     z-index: 888;
     width: 70%;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .home .content h1{
@@ -125,6 +139,11 @@ button:hover, .home .content a:hover{
 }
 
 
+/* Homepage Design */
+
+
+
+/* FOOTER */
 footer {
     position: fixed;
     bottom: 0;
@@ -132,6 +151,8 @@ footer {
     text-align: center;
     color: Black;
 }
+
+/* FOOTER */
 
 
 
