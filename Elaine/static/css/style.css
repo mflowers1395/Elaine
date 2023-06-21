@@ -1,33 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
 
 /* Overall Website Design */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /* Overall Website Design */
 
 /* HEADER AND NAVIGATION BAR */
-header{
+header {
     z-index: 999;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 200px;
     transition: 0.5s ease;
-    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, .2);
+    background-color: white;
 
 
 
 }
 
-header .brand{
+header .brand {
     color: #A94064;
     font-size: 1.5em;
     font-weight: 700;
@@ -35,12 +37,12 @@ header .brand{
     text-decoration: none;
 }
 
-header .navigation{
+header .navigation {
     position: relative;
 
 }
 
-header .navigation .navigation-items a{
+header .navigation .navigation-items a {
     position: relative;
     color: #000;
     font-size: 1em;
@@ -49,7 +51,7 @@ header .navigation .navigation-items a{
     transition: 0.3s ease;
 }
 
-header .navigation .navigation-items a:before{
+header .navigation .navigation-items a:before {
     content: '';
     position: absolute;
     background: #000;
@@ -60,26 +62,20 @@ header .navigation .navigation-items a:before{
     transition: 0.3s ease;
 }
 
-header .navigation .navigation-items a:hover:before{
+header .navigation .navigation-items a:hover:before {
     width: 100%;
 }
 
 /* HEADER AND NAVIGATION BAR */
 
 /* Homepage Design */
-section{
-    padding:100px 200px;
-    
+section {
+    padding: 100px 200px;
+
 }
 
-.home .content .marilyn{
-    display: block;
-    margin-left: 800px;
-    width: 50%;
-    justify-content: space-between;
-}
 
-.home{
+.home {
     position: relative;
     width: 100%;
     min-height: 100vh;
@@ -90,13 +86,13 @@ section{
 
 }
 
-.home .content{
+.home .content {
     z-index: 888;
     width: 70%;
     margin-top: 10px;
 }
 
-.home .content h1{
+.home .content h1 {
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
@@ -105,13 +101,13 @@ section{
     margin-bottom: 40px;
 }
 
-.home .content p{
-    margin-bottom:65px;
+.home .content p {
+    margin-bottom: 65px;
 }
 
 
 
-button{
+button {
     background-color: rgba(207, 47, 116);
     padding: 9px 25px;
     border: none;
@@ -121,12 +117,13 @@ button{
 
 }
 
-button:hover, .home .content a:hover{
-    background-color: rgba(207, 47, 116,0.8);
+button:hover,
+.home .content a:hover {
+    background-color: rgba(207, 47, 116, 0.8);
 
 }
 
-.home .content a{
+.home .content a {
     background-color: rgba(207, 47, 116);
     padding: 9px 25px;
     border: none;
@@ -139,8 +136,138 @@ button:hover, .home .content a:hover{
 }
 
 
+
 /* Homepage Design */
 
+
+/* Resume Design */
+.profile{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height:50%;
+    width:50%;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* Resume Design */
+
+/* Blog--------------------------------------- */
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.blog-heading span{
+    color: #f33c3c;
+}
+
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+    
+}
+
+.blog-box{
+    width:350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px;
+
+}
+
+.blog-img{
+    width: 100%;
+    height: auto;
+}
+
+.blog-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.blog-text{
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-text span{
+    color:#f33c3c;
+    font-size: 0.9rem;
+}
+
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+
+
+}
+
+.blog-text .blog-title:hover{
+    color:#f33c3c;
+    transition: all ease 0.3s;
+
+}
+
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+
+
+}
+
+.blog-text a{
+    color: #0f0f0f;
+
+
+}
+
+.blog-text a:hover{
+    color: #f33c3c;
+    transition: all ease 0.3s;
+    
+
+}
+
+/* Blog */
 
 
 /* FOOTER */
@@ -153,9 +280,3 @@ footer {
 }
 
 /* FOOTER */
-
-
-
-
-
-
