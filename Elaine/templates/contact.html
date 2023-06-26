@@ -3,5 +3,21 @@
 {% block title %} Contact {% endblock %}
 
 {% block content %}
+<div class="contact-container">
+    <h1> Contact Me! </h1>
+    <form onsubmit="sendEmail(); reset(); return false;">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Phone">
+        <input type="text" placeholder="Subject">
+        <textarea type="text" placeholder="What's on your mind?"></textarea>
+        <button type="submit" value="Submit"> Send Message</button>
 
+    </form>
+</div>
+
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+<script>
+
+</script>
 {% endblock %}

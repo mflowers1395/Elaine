@@ -54,7 +54,7 @@ header .navigation .navigation-items a {
 header .navigation .navigation-items a:before {
     content: '';
     position: absolute;
-    background: #000;
+    background: #A94064;
     width: 0;
     height: 3px;
     bottom: 0;
@@ -69,6 +69,25 @@ header .navigation .navigation-items a:hover:before {
 /* HEADER AND NAVIGATION BAR */
 
 /* Homepage Design */
+
+.home-images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 0.1px;
+    justify-content: space-between;
+}
+
+.home-images img{
+    width: 60%;
+    height: 60%;
+    margin-bottom: 40px;
+    box-shadow: 0 0 30px 6px rgba(207, 47, 116);
+    border-radius: 50%; 
+    
+}
+
 section {
     padding: 100px 200px;
 
@@ -88,7 +107,7 @@ section {
 
 .home .content {
     z-index: 888;
-    width: 70%;
+    width: 50%;
     margin-top: 10px;
 }
 
@@ -145,10 +164,10 @@ button:hover,
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 100px;
     margin-bottom: 30px;
-    height:50%;
-    width:50%;
+    height:45%;
+    width:45%;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
@@ -267,7 +286,7 @@ button:hover,
 
 }
 
-/* Blog */
+/* Blog--------------------------------------- */
 
 
 /* About */
@@ -333,6 +352,36 @@ button:hover,
 /* About */
 
 /* Contact Form */
+
+.contact-container{
+    max-width: 900px;
+    margin: 200px 450px;
+    padding: 5%;
+    text-align: center;
+    background-color: pink;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
+}
+
+.contact-container form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.contact-container textarea{
+    display: block;
+    margin-bottom: 10px;
+    width: 100%
+
+}
+
+.contact-container input{
+    display: block;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
 
 
 /* Contact Form */
