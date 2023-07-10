@@ -5,7 +5,8 @@
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <script type="text/javascript" src="{% static 'js/javascript.js' %}"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/81080d6f23.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <meta charset="utf-8">
     <title>{% block title %} Elaine {% endblock %}</title> 
 </head>
@@ -16,14 +17,11 @@
         <a href="{% url 'index' %}" class="brand">Elaine</a>
         <div class="navigation">
             <div class="navigation-items">
+                <a href="{% url 'index' %}">Home</a>
                 <a href="{% url 'about' %}">About</a>
                 <a href="{% url 'resume' %}">Resume</a>
-                <a href="{% url 'projects' %}">Projects</a>
                 <a href="{% url 'blog' %}">Blog</a>
-                <a href="{% url 'tutorials' %}">Tutorials</a>
                 <a  href="{% url 'contact' %}">Contact</a>
-
-
             </div>
 
         </div>

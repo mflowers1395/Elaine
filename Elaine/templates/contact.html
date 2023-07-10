@@ -3,21 +3,56 @@
 {% block title %} Contact {% endblock %}
 
 {% block content %}
-<div class="contact-container">
-    <h1> Contact Me! </h1>
-    <form onsubmit="sendEmail(); reset(); return false;">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Phone">
-        <input type="text" placeholder="Subject">
-        <textarea type="text" placeholder="What's on your mind?"></textarea>
-        <button type="submit" value="Submit"> Send Message</button>
 
-    </form>
-</div>
+<section class="contact">
+    <div class="contact-content">
+        <h2>Contact Me</h2>
+    </div>
+    <div class="contact-container">
+        <div class="contactInfo">
+            <div class="box">
+                <div class="icon"><i class="fa fa-phone" aria-hidden="true"></i>
 
-<script src="https://smtpjs.com/v3/smtp.js"> </script>
-<script>
+                </div>
+                <div class="text">
+                <h3>Phone</h3>
+                <p>773-574-4396</p>
+            </div>
+            </div>
 
-</script>
+            <div class="box">
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="text">
+                <h3>Email</h3>
+                <p>marilynflowers021@gmail.com</p>
+            </div>
+            </div>
+        </div>
+        <div class="contactForm">
+            <form action="https://formsubmit.co/marilynflowers021@gmail.com" method="POST">
+                <h2> Send Message</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required" placeholder="Full Name">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="" required="required" placeholder="Email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="text" name="" required="required" placeholder="Subject">
+                </div>
+
+                <div class="inputBox">
+                    <textarea type="text" placeholder="How Many Bugs Did You Fix Today?😀"></textarea>
+                </div>
+                <div class="inputBox">
+                <button type="submit" value="Submit"> Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

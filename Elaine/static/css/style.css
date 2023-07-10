@@ -81,11 +81,11 @@ header .navigation .navigation-items a:hover:before {
 
 .home-images img{
     width: 60%;
-    height: 60%;
+    height: auto;
     margin-bottom: 40px;
     box-shadow: 0 0 30px 6px rgba(207, 47, 116);
     border-radius: 50%; 
-    
+
 }
 
 section {
@@ -108,33 +108,36 @@ section {
 .home .content {
     z-index: 888;
     width: 50%;
+    height: auto;
     margin-top: 10px;
 }
 
 .home .content h1 {
+    white-space: normal; 
     font-size: 4em;
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 75px;
     margin-bottom: 40px;
+    color:rgba(207, 47, 116);
 }
 
 .home .content p {
+    white-space: normal; 
     margin-bottom: 65px;
 }
 
 
 
 button {
-    background-color: rgba(207, 47, 116);
     padding: 9px 25px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-
 }
+
 
 button:hover,
 .home .content a:hover {
@@ -143,14 +146,14 @@ button:hover,
 }
 
 .home .content a {
-    background-color: rgba(207, 47, 116);
+    background-color: black;
     padding: 9px 25px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
     text-decoration: none;
-    color: #000;
+    color: white;
 
 }
 
@@ -215,7 +218,7 @@ button:hover,
 }
 
 .blog-box{
-    width:350px;
+    width:310px;
     background-color: #ffffff;
     border: 1px solid #ececec;
     margin: 20px;
@@ -291,98 +294,144 @@ button:hover,
 
 /* About */
 
+.profile{
+    width: 50%;
+    border-radius: 8px;
+}
 
-.about{
-    height:100vh;
+.aboutcontainer{
     display: flex;
-    align-items: center;
 }
 
-.about-container{
-    width: 100%;
-    max-width: 1160px;
-    margin: 0 auto;
-    padding: 0 auto;
-    background-color: pink;
-
-}
-
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-    align-items: center;
-    justify-content:center;
-
-}
-
-.left img{
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-
-}
-
-.right > *{
-    margin-bottom: 1.1rem;
-}
-
-:root{
-    --color:rgba(207, 47, 116);
-}
-.right h4{
-    font-weight: 500;
-    background: var(--color);
-    display:inline-block;
-    padding: 5px 15px;
-    font-size: 16px;
-    border-radius: 4px;
-
-}
-
-.right h1{
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.right p{
-    text-align: justify;
-}
 
 /* About */
 
 /* Contact Form */
 
-.contact-container{
-    max-width: 900px;
-    margin: 200px 450px;
-    padding: 5%;
+.contact{
+    position:relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contact .contact-content{
+    max-width: 800px;
     text-align: center;
-    background-color: pink;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.25);
-}
-
-.contact-container form{
-    max-width: 500px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 20px 0;
-}
-
-.contact-container textarea{
-    display: block;
-    margin-bottom: 10px;
-    width: 100%
 
 }
 
-.contact-container input{
-    display: block;
-    margin-bottom: 10px;
+.contact .contact-content h2{
+    font-size: 36px;
+    font-weight:500;
+    color: black;
+}
+
+.contact .contact-content p{
+    font-weight:300;
+    color: black;
+}
+
+.contact-container{
+   width:100%; 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 30px;
+}
+
+.contact-container .contactInfo{
     width: 50%;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.contact-container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+
+}
+
+.contact-container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background-color: rgba(207, 47, 116, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.contact-container .contactInfo .box .text{
+
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: black;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.contact-container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgba(207, 47, 116, 0.8);
+
+}
+
+.contact-container .contactForm button:hover {
+    background-color: rgba(207, 47, 116, 0.8);
+
 }
 
 
+.contact-container .contactForm button{
+    background-color: black;
+    padding: 9px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    color: white;
+
+}
+
+.contactForm{
+    width: 40%;
+    padding: 40px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
+
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+    
+}
 
 /* Contact Form */
 
